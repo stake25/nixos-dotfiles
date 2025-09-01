@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cp -f $HOME/.config/.zshrc $HOME/.zshrc
+
 # Script: move-nixos-config.sh
 # Moves /etc/nixos to ~/.config/nixos and creates a symlink, if safe to do so.
 
@@ -23,6 +25,9 @@ if [ ! -d /etc/nixos ]; then
   echo "/etc/nixos is not a directory. Does it exist?"
   exit 1
 fi
+
+# backup the nixos config before starting
+backup.sh /etc/nixos/
 
 # Create ~/.config if it doesn't exist
 mkdir -p "$HOME/.config"

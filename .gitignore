@@ -7,6 +7,8 @@
 !nixos/
 nixos/hardware*.nix
 !scripts/
+!backups/
+backups/*
 
 # top level ignores
 .gsd*

@@ -16,3 +16,6 @@ EDITOR="codium"
 
 # add scripts to the path
 export PATH="$HOME/.config/scripts:$PATH"
+
+# add backups folder for quick reference
+export BACKUPS="$HOME/.config/backups/"
