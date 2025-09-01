@@ -1,0 +1,16 @@
+# Whitelist approach
+*/
+
+# list config folders you want
+!zsh/
+!zellij/
+!nixos/
+nixos/hardware*.nix
+!scripts/
+
+# top level ignores
+.gsd*
+gnome*
+mimeapps*
+Qt*
+user*
