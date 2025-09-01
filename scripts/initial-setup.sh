@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cp -f $HOME/.config/.zshrc $HOME/.zshrc
+
 # Script: move-nixos-config.sh
 # Moves /etc/nixos to ~/.config/nixos and creates a symlink, if safe to do so.
 
