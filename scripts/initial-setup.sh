@@ -26,6 +26,9 @@ if [ ! -d /etc/nixos ]; then
   exit 1
 fi
 
+# backup the nixos config before starting
+backup.sh /etc/nixos/
+
 # Create ~/.config if it doesn't exist
 mkdir -p "$HOME/.config"
 
